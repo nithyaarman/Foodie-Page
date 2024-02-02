@@ -1,0 +1,290 @@
+<html>
+<head>
+    <title>Nithya's Foodie Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+   <style>
+#mynavbar {
+            background-color:lightgreen;
+            margin-bottom: 0px; 
+        }
+
+ .navbar {
+            background-color: darkolivegreen;
+            border: none;
+        }
+
+.navbar-brand {
+            color:blueviolet;
+        }
+
+.navbar-nav > li > a {
+            color: lightslategrey;
+        }
+.navbar-inverse .navbar-nav li a {
+            color:white;
+        }
+
+        .navbar-inverse .navbar-nav li a:hover {
+            color: purple;
+        }
+
+        .navbar-inverse .navbar-toggle {
+            border-color: purple;
+        }
+
+        .navbar-inverse .navbar-toggle:hover,
+        .navbar-inverse .navbar-toggle:focus {
+            background-color:plum;
+        }
+h1 {
+    font-family: fantasy;
+      color: darkblue;       
+        }
+       h2{
+          font-family: sans-serif;
+      color:blueviolet;  
+       }  
+       h3{
+         font-family: cursive;
+      color: purple;   
+       }
+        body,
+        html {
+            height: 100%;
+        }
+       body{
+           background-color:aliceblue; 
+       }
+        .bgimg {
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+           
+        }
+
+        .menu-category,
+        .menu-category1,
+        .menu-category2,
+        .menu-category3,
+        .menu-category4 {
+        margin-bottom: 20px;
+        }
+
+        .menu-category h3 {
+            font-size: 24px;
+            color: green;
+            border-bottom: 2px solid BLACK;
+            padding-bottom: 5px;
+        }
+
+        .menu-category ul {
+            padding-left: 20px;
+        }
+
+        .menu-category ul li {
+            font-size: 18px;
+            color: blueviolet;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-category ul li img {
+            width: 20px;
+            height:20PX;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .count-container {
+            display: flex;
+            align-items: center;
+        }
+        .count-container button {
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-to-cart-button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <nav class="navbar navbar-inverse" style="position: sticky; top: 0; z-index: 100;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           <marquee><a class="navbar-brand" href="#"><strong>NK Restaurant</strong></a></marquee>
+        </div>
+        <div class="navbar-collapse collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="menu">
+        <div class="container">
+            <u><h1>Menu</h1></u>
+            <p>Explore our delicious offerings from various cuisines.</p>
+            <div class="menu-category11">
+                 <u><h2>South Indian</h2></u>
+                <ul>
+                        <marquee>
+                        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9zYXxlbnwwfHwwfHx8MA%3D%3D" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Dosa</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                            <div class="Menu-price">Rs 50.00</div>
+                            </marquee>
+                    <img src="https://media.istockphoto.com/id/638506124/photo/idli-with-coconut-chutney-and-sambhar.jpg?s=612x612&w=0&k=20&c=ze1ngBM0LY4w9aqWx_tGe2vTAr4uf36elveTDZ83fgw="sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>IDLY</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                     <div class="Menu-price">Rs 30.00</div>
+                    <marquee>
+                    <img src="https://media.istockphoto.com/id/503730889/photo/chicken-biryani-1-11.jpg?s=612x612&w=0&k=20&c=CBn9vQQp0-QRiQZuEMUNbhN6BVlnrbOAicSEaXOQn_o=" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Chicken Biryani</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                         <div class="Menu-price">Rs 200.00</div>
+                    </marquee>
+                    <img src="https://e0.pxfuel.com/wallpapers/979/76/desktop-wallpaper-the-best-eid-dishes-from-around-the-world-ferns-n-petals-mutton-biryani-thumbnail.jpg" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Mutton Biryani</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                     <div class="Menu-price">Rs 250.00</div>
+        <marquee>
+                    <img src="https://uk.thespicetailor.com/cdn/shop/collections/29-MOUTH-WATERING_MALABAR_PRAWN_BIRYANI.jpg?v=1675065870" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Prawns Biryani</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+             <div class="Menu-price">Rs 300.00</div>
+            </marquee>
+                </ul>
+            </div>
+            <div class="menu-category1">
+                <u><h2>Chinese</h2></u>
+                <ul>
+                   
+                    <img src="https://fullofplants.com/wp-content/uploads/2020/05/sweet-and-sour-spicy-thai-fried-rice-easy-vegan-meal-with-vegetables-thumb.jpg" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Fried Rice</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                     <div class="Menu-price">Rs 70.00</div>
+                         <marquee>
+                    <img src="https://www.secondrecipe.com/wp-content/uploads/2021/05/indian-hakka-noodles.jpg" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Noodles</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                              <div class="Menu-price">Rs 60.00</div>
+                    </marquee>
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/07/chicken-manchurian-1.jpg" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Manchuria</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                     <div class="Menu-price">Rs 150.00</div>
+                </ul>
+            </div>
+            <div class="menu-category3">
+                <u><h2>North Indian</h2></u>
+                <ul>
+                    <marquee>
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg?quality=90&resize=440,400" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Butter Chicken</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                         <div class="Menu-price">Rs 250.00</div>
+                        </marquee>
+                    <img src="https://www.chocolatesandchai.com/wp-content/uploads/2021/05/Paneer-Tikka-Featured.jpg" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>Paneer Tikka</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                     <div class="Menu-price">Rs 200.00</div>
+                    <marquee>
+                    <img src="https://incredible.kitchen/wp-content/uploads/2018/11/img_0444.jpg" sytle width="200px" ; height="200px" ; >
+                        <div class="count-container">
+                            <h3>butter naan</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="count-button" onclick="decreaseCount(this)">-</button>&nbsp;&nbsp;
+                            <span class="count">0</span>&nbsp;&nbsp;
+                            <button class="count-button" onclick="increaseCount(this)">+</button>
+                        </div>
+                         <div class="Menu-price">Rs 50.00/piece</div>
+                    </marquee>
+                 </ul>
+                
+            </div>
+                
+        </div>
+    </section>
+         <script>
+        function increaseCount(button) {
+            var countElement = button.parentElement.querySelector(".count");
+            countElement.textContent = parseInt(countElement.textContent) + 1;
+        }
+
+        function decreaseCount(button) {
+            var countElement = button.parentElement.querySelector(".count");
+            var countValue = parseInt(countElement.textContent);
+            if (countValue > 0) {
+                countElement.textContent = countValue - 1;
+            }
+        }
+    
+    </script>
+   
+</body>
+</html>

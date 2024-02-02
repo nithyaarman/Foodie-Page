@@ -1,0 +1,69 @@
+.background-container{
+    background-image: url(https://www.portlandoldport.com/wp-content/uploads/2020/04/60084682_2183185655143982_7009416794922287104_o.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: "cursive", sans-serif;
+    }
+h1{
+    text-align: center;
+    font-family: cursive;
+    color: tan;
+    background-color: white;
+}
+#mynavbar {
+            background-color:green;
+            margin-bottom: 0px; 
+        }
+
+ .navbar {
+            background-color: darkolivegreen;
+            border: none;
+        }
+.navbar-brand { 
+    font-family:fantasy;
+    font-style: inherit;
+    background-color: purple;
+        }
+
+ .navbar-nav > li > a {
+            color: purple;
+        }
+.navbar-brand {
+            font-size: 24px;
+        }
+
+        .navbar-inverse .navbar-nav li a {
+            color:white;
+        }
+
+        .navbar-inverse .navbar-nav li a:hover {
+            color: deepskyblue;
+        }
+
+        .navbar-inverse .navbar-toggle {
+            border-color: deepskyblue;
+        }
+
+        .navbar-inverse .navbar-toggle:hover,
+        .navbar-inverse .navbar-toggle:focus {
+            background-color:deepskyblue;
+        }
+.bbn-signup{
+    background-color: aqua;
+    color: blanchedalmond;
+    border: 1px skyblue;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-size: 20px;
+    transition: background-color 0.5;
+}
+.btn-signup:hover {
+            background-color:purple;
+            border-color: mediumspringgreen;
+}
